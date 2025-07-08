@@ -10,7 +10,7 @@
     ],
     "env": {
       "NODE_ENV": "production",
-      "FRONTEND_URL": "https://your-vercel-domain.vercel.app"
+      "FRONTEND_URL": "agrosmart-qcno.vercel.app"
     }
   }
   
