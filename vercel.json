@@ -24,16 +24,76 @@
       "dest": "/frontend/public/$1"
     },
     {
-      "src": "/(aboutus|admin|agriproduct|blog|buyer-dashboard|cancel|cart|chatbot|contactus|farmer-dashboard|financial|homepage|login|postpage|season|success|index)\\.html",
-      "dest": "/frontend/views/$1.html"
+      "src": "/login",
+      "dest": "/frontend/views/login.html"
+    },
+    {
+      "src": "/aboutus",
+      "dest": "/frontend/views/aboutus.html"
+    },
+    {
+      "src": "/blog",
+      "dest": "/frontend/views/blog.html"
+    },
+    {
+      "src": "/cart",
+      "dest": "/frontend/views/cart.html"
+    },
+    {
+      "src": "/success",
+      "dest": "/frontend/views/success.html"
+    },
+    {
+      "src": "/cancel",
+      "dest": "/frontend/views/cancel.html"
+    },
+    {
+      "src": "/contactus",
+      "dest": "/frontend/views/contactus.html"
+    },
+    {
+      "src": "/buyer-dashboard",
+      "dest": "/frontend/views/buyer-dashboard.html"
+    },
+    {
+      "src": "/farmer-dashboard",
+      "dest": "/frontend/views/farmer-dashboard.html"
+    },
+    {
+      "src": "/admin",
+      "dest": "/frontend/views/admin.html"
+    },
+    {
+      "src": "/agriproduct",
+      "dest": "/frontend/views/agriproduct.html"
+    },
+    {
+      "src": "/homepage",
+      "dest": "/frontend/views/homepage.html"
+    },
+    {
+      "src": "/season",
+      "dest": "/frontend/views/season.html"
+    },
+    {
+      "src": "/financial",
+      "dest": "/frontend/views/financial.html"
+    },
+    {
+      "src": "/chatbot",
+      "dest": "/frontend/views/chatbot.html"
+    },
+    {
+      "src": "/postpage",
+      "dest": "/frontend/views/postpage.html"
     },
     {
       "src": "/",
-      "dest": "/frontend/views/index.html"
+      "dest": "/frontend/public/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/views/index.html"
+      "dest": "/frontend/public/index.html"
     }
   ],
   "env": {
