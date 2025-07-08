@@ -10,23 +10,19 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(?<path>.+)",
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/(.*\\.(?:js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
-      "dest": "/frontend/public/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/public/index.html"
-    }
-  ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.js" },
-    { "source": "/(.*)", "destination": "/frontend/public/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/(.*\\.(?:js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
+      "destination": "/frontend/public/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/public/index.html"
+    }
   ],
   "env": {
     "NODE_ENV": "production"
