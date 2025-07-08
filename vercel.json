@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "frontend/views/**",
+      "src": "frontend/views/**/*.html",
       "use": "@vercel/static"
     },
     {
@@ -14,25 +14,26 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index.js"
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
     },
     {
-      "source": "/(.*\\.(?:js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": ".*"
-        }
-      ],
-      "destination": "/frontend/public/$1"
+      "src": "/(.*\\.(?:js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
+      "dest": "/frontend/public/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/frontend/views/index.html"
+      "src": "/(aboutus|admin|agriproduct|blog|buyer-dashboard|cancel|cart|chatbot|contactus|farmer-dashboard|financial|homepage|login|postpage|season|success|index)\\.html",
+      "dest": "/frontend/views/$1.html"
+    },
+    {
+      "src": "/",
+      "dest": "/frontend/views/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/views/index.html"
     }
   ],
   "env": {
