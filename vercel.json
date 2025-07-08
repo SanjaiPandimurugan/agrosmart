@@ -20,7 +20,7 @@
       "dest": "/api/index.js"
     },
     {
-      "src": "/(.*\\.(?:js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
+      "src": "/(.*\\.(js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot))",
       "dest": "/frontend/public/$1"
     },
     {
